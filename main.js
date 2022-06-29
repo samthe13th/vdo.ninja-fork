@@ -1816,6 +1816,12 @@ async function main(){ // main asyncronous thread; mostly initializes the user s
 		}
 		log("session.videoDevice:" + session.videoDevice);
 	}
+
+	if (!urlParams.has('interactionPrompt')) {
+		console.log("prompt not found")
+		var interactionPrompt = getById("interactionPrompt");
+		interactionPrompt.style.display = 'none';
+	}
 	
 	
 	// audioDevice

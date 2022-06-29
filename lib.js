@@ -4539,6 +4539,13 @@ async function jumptoroom2() {
 }
 
 
+function interactionClick() {
+	console.log("CLICK!")
+	var interactionOverlay = getById("interactionPrompt");
+	interactionOverlay.style.display = 'none';
+}
+
+
 async function jumptoroom(event = null) {
 
 	if (event) {

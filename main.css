@@ -3528,6 +3528,22 @@ input:checked + .slider:before {
 	margin: 0 5%;
 }
 
+#interactionPrompt {
+	display: flex; 
+	position: fixed;
+	z-index: 1000;
+	top: 0; 
+	left: 0;
+	width: 100%; 
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px; 
+	background: black; 
+	color: white;
+	user-select: none;
+}
+
 #iframe_source{
 	width: 100%;
 	height: 100%;
